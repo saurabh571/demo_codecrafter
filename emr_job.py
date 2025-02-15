@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("SimpleEMRJob").getOrCreate()
 
 # S3 paths (update these)
-INPUT_PATH = "s3://s3-test-bucket-307946644079/input/data.csv"
+INPUT_PATH = "s3://s3-test-bucket-307946644079/input/emr_data.csv"
 OUTPUT_PATH = "s3://s3-test-bucket-307946644079/output/"
 
 # Read CSV
